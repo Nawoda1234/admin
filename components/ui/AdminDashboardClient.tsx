@@ -23,7 +23,7 @@ export default function AdminDashboardClient() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <StatCard
             title="Users"
-            value={1234}
+            value={4}
             subtitle="Active Users"
             icon={<Users size={32} />}
             color="blue"
@@ -49,11 +49,11 @@ export default function AdminDashboardClient() {
           />
           <StatCard
             title="Recent Activity"
-            value="87%"
+            value=""
             subtitle="Recent Activity Users"
             icon={<TrendingUp size={32} />}
             color="red"
-            trend={{ value: 5, label: 'vs last month' }}
+            trend={{  }}
             delay={0.3}
           />
         </div>
@@ -61,7 +61,7 @@ export default function AdminDashboardClient() {
         {/* Progress Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           <ProgressCard
-            title="Monthly Enrollment Goal"
+            title=" ALL users"
             current={856}
             target={1000}
             unit=" students"
@@ -69,18 +69,18 @@ export default function AdminDashboardClient() {
             delay={0.4}
           />
           <ProgressCard
-            title="Course Completion Rate"
+            title="Meal plan"
             current={73}
             target={85}
-            unit="%"
+            unit="Add the meals"
             color="green"
             delay={0.5}
           />
           <ProgressCard
-            title="Revenue Target"
+            title="Work out"
             current={45678}
             target={60000}
-            unit="$"
+            unit="Add work out plan"
             color="purple"
             delay={0.6}
           />
@@ -97,40 +97,29 @@ export default function AdminDashboardClient() {
           <div className="space-y-4">
             <ActivityItem
               icon={<UserCheck size={20} />}
-              type="New Student Enrolled"
+              type="New User Enrolled"
               date="2 minutes ago"
-              notes="John Doe enrolled in Advanced React Course"
+              notes="Janith Wick"
             />
             <ActivityItem
               icon={<BookOpen size={20} />}
-              type="Course Completed"
+              type="New User Enrolled"
               date="15 minutes ago"
               notes="Sarah Smith completed Introduction to TypeScript"
             />
             <ActivityItem
               icon={<DollarSign size={20} />}
-              type="Payment Received"
+              type="New User ENrolled"
               date="1 hour ago"
               notes="$299 from Michael Johnson"
             />
             <ActivityItem
               icon={<Calendar size={20} />}
-              type="New Session Scheduled"
+              type="New User ENrolled"
               date="2 hours ago"
               notes="Live Q&A Session: React Best Practices"
             />
-            <ActivityItem
-              icon={<AlertCircle size={20} />}
-              type="Support Ticket"
-              date="3 hours ago"
-              notes="User reported login issue - Resolved"
-            />
-            <ActivityItem
-              icon={<Clock size={20} />}
-              type="Course Update"
-              date="5 hours ago"
-              notes="JavaScript Fundamentals - New module added"
-            />
+            
           </div>
         </motion.div>
       </div>
